@@ -1,0 +1,33 @@
+unit UFRM_Principal;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Actions, Vcl.ActnList,
+  Vcl.ActnCtrls, Vcl.ToolWin, Vcl.ActnMan, Vcl.ActnMenus,
+  Vcl.PlatformDefaultStyleActnCtrls;
+
+type
+  TForm1 = class(TForm)
+    Acoes: TActionManager;
+    ActionMainMenuBar1: TActionMainMenuBar;
+    ActionToolBar1: TActionToolBar;
+    ac_Cliente: TAction;
+    ac_Produto: TAction;
+    ac_Usuario: TAction;
+    ac_Sair: TAction;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+end.

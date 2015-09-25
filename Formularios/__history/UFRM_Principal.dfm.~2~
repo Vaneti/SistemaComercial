@@ -1,0 +1,103 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 608
+  ClientWidth = 842
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object ActionMainMenuBar1: TActionMainMenuBar
+    Left = 0
+    Top = 0
+    Width = 842
+    Height = 27
+    ActionManager = Acoes
+    Caption = 'ActionMainMenuBar1'
+    Color = clMenuBar
+    ColorMap.DisabledFontColor = 7171437
+    ColorMap.HighlightColor = clWhite
+    ColorMap.BtnSelectedFont = clBlack
+    ColorMap.UnusedColor = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    Spacing = 0
+  end
+  object ActionToolBar1: TActionToolBar
+    Left = 0
+    Top = 27
+    Width = 842
+    Height = 29
+    Caption = 'ActionToolBar1'
+    Color = clMenuBar
+    ColorMap.DisabledFontColor = 7171437
+    ColorMap.HighlightColor = clWhite
+    ColorMap.BtnSelectedFont = clBlack
+    ColorMap.UnusedColor = clWhite
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clBlack
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    Spacing = 0
+    ExplicitLeft = 352
+    ExplicitTop = 312
+    ExplicitWidth = 150
+  end
+  object Acoes: TActionManager
+    ActionBars = <
+      item
+        Items = <
+          item
+            Items = <
+              item
+                Action = ac_Cliente
+                Caption = '&Clientes'
+              end
+              item
+                Action = ac_Produto
+                Caption = '&Produtos'
+              end
+              item
+                Action = ac_Usuario
+                Caption = '&Usuarios'
+              end
+              item
+                Action = ac_Sair
+                Caption = '&Sair'
+              end>
+            Caption = '&Cadastro'
+          end>
+        ActionBar = ActionMainMenuBar1
+      end>
+    Left = 752
+    Top = 112
+    StyleName = 'Platform Default'
+    object ac_Cliente: TAction
+      Category = 'Cadastro'
+      Caption = 'Clientes'
+    end
+    object ac_Produto: TAction
+      Category = 'Cadastro'
+      Caption = 'Produtos'
+    end
+    object ac_Usuario: TAction
+      Category = 'Cadastro'
+      Caption = 'Usuarios'
+    end
+    object ac_Sair: TAction
+      Category = 'Cadastro'
+      Caption = 'Sair'
+    end
+  end
+end
