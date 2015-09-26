@@ -1,0 +1,153 @@
+unit UDM_Principal;
+
+interface
+
+uses
+  System.SysUtils, System.Classes, FireDAC.Stan.Intf, FireDAC.Stan.Option,
+  FireDAC.Stan.Error, FireDAC.UI.Intf, FireDAC.Phys.Intf, FireDAC.Stan.Def,
+  FireDAC.Stan.Pool, FireDAC.Stan.Async, FireDAC.Phys, FireDAC.Phys.MSSQL,
+  FireDAC.Phys.MSSQLDef, FireDAC.VCLUI.Wait, FireDAC.Stan.Param, FireDAC.DatS,
+  FireDAC.DApt.Intf, FireDAC.DApt, Data.DB, Datasnap.DBClient,
+  Datasnap.Provider, FireDAC.Comp.Client, System.ImageList, Vcl.ImgList,
+  Vcl.Controls, FireDAC.Comp.DataSet, FireDAC.Comp.UI, FireDAC.Phys.ODBCBase;
+
+type
+  TDataModule1 = class(TDataModule)
+    con: TFDConnection;
+    link: TFDPhysMSSQLDriverLink;
+    cursor: TFDGUIxWaitCursor;
+    qryLogin: TFDQuery;
+    LoginIdUsuario: TIntegerField;
+    ilcadastro: TImageList;
+    traTransacoes: TFDTransaction;
+    qryCliente: TFDQuery;
+    dspCliente: TDataSetProvider;
+    cdsCliente: TClientDataSet;
+    cdsClienteIdUsuario: TAutoIncField;
+    cdsClienteCPF: TStringField;
+    cdsClienteRG: TStringField;
+    cdsClienteNome: TStringField;
+    cdsClienteLogin: TStringField;
+    cdsClienteSenha: TStringField;
+    cdsClienteSexo: TStringField;
+    cdsClienteEstCivil: TStringField;
+    cdsClienteDtNascimento: TSQLTimeStampField;
+    cdsClienteEndereco: TStringField;
+    cdsClienteBairro: TStringField;
+    cdsClienteNumero: TStringField;
+    cdsClienteUF: TStringField;
+    cdsClienteCidade: TStringField;
+    cdsClienteCEP: TStringField;
+    cdsClienteFone: TStringField;
+    cdsClienteCelular: TStringField;
+    cdsClienteEmail: TStringField;
+    cdsClienteAtivo: TBooleanField;
+    cdsClienteFoto: TBlobField;
+    qryProduto: TFDQuery;
+    dspProduto: TDataSetProvider;
+    cdsProduto: TClientDataSet;
+    AutoIncField1: TAutoIncField;
+    StringField1: TStringField;
+    StringField2: TStringField;
+    StringField3: TStringField;
+    StringField4: TStringField;
+    StringField5: TStringField;
+    StringField6: TStringField;
+    StringField7: TStringField;
+    SQLTimeStampField1: TSQLTimeStampField;
+    StringField8: TStringField;
+    StringField9: TStringField;
+    StringField10: TStringField;
+    StringField11: TStringField;
+    StringField12: TStringField;
+    StringField13: TStringField;
+    StringField14: TStringField;
+    StringField15: TStringField;
+    StringField16: TStringField;
+    BooleanField1: TBooleanField;
+    BlobField1: TBlobField;
+    qryUsuario: TFDQuery;
+    DataSetProvider2: TDataSetProvider;
+    ClientDataSet2: TClientDataSet;
+    AutoIncField2: TAutoIncField;
+    StringField17: TStringField;
+    StringField18: TStringField;
+    StringField19: TStringField;
+    StringField20: TStringField;
+    StringField21: TStringField;
+    StringField22: TStringField;
+    StringField23: TStringField;
+    SQLTimeStampField2: TSQLTimeStampField;
+    StringField24: TStringField;
+    StringField25: TStringField;
+    StringField26: TStringField;
+    StringField27: TStringField;
+    StringField28: TStringField;
+    StringField29: TStringField;
+    StringField30: TStringField;
+    StringField31: TStringField;
+    StringField32: TStringField;
+    BooleanField2: TBooleanField;
+    BlobField2: TBlobField;
+    qryPerfil: TFDQuery;
+    dspPerfil: TDataSetProvider;
+    cdsPerfil: TClientDataSet;
+    AutoIncField3: TAutoIncField;
+    StringField33: TStringField;
+    StringField34: TStringField;
+    StringField35: TStringField;
+    StringField36: TStringField;
+    StringField37: TStringField;
+    StringField38: TStringField;
+    StringField39: TStringField;
+    SQLTimeStampField3: TSQLTimeStampField;
+    StringField40: TStringField;
+    StringField41: TStringField;
+    StringField42: TStringField;
+    StringField43: TStringField;
+    StringField44: TStringField;
+    StringField45: TStringField;
+    StringField46: TStringField;
+    StringField47: TStringField;
+    StringField48: TStringField;
+    BooleanField3: TBooleanField;
+    BlobField3: TBlobField;
+    qryVendas: TFDQuery;
+    dspVendas: TDataSetProvider;
+    cdsVendas: TClientDataSet;
+    AutoIncField4: TAutoIncField;
+    StringField49: TStringField;
+    StringField50: TStringField;
+    StringField51: TStringField;
+    StringField52: TStringField;
+    StringField53: TStringField;
+    StringField54: TStringField;
+    StringField55: TStringField;
+    SQLTimeStampField4: TSQLTimeStampField;
+    StringField56: TStringField;
+    StringField57: TStringField;
+    StringField58: TStringField;
+    StringField59: TStringField;
+    StringField60: TStringField;
+    StringField61: TStringField;
+    StringField62: TStringField;
+    StringField63: TStringField;
+    StringField64: TStringField;
+    BooleanField4: TBooleanField;
+    BlobField4: TBlobField;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataModule1: TDataModule1;
+
+implementation
+
+{%CLASSGROUP 'Vcl.Controls.TControl'}
+
+{$R *.dfm}
+
+end.

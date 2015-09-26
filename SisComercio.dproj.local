@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2015/09/25 21:35:46.766,=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Unit2.pas</Transaction>
-    <Transaction>2015/09/25 21:37:06.941,C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Formularios\01-Cadastros\UFRM_Modelo.dfm=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Unit2.dfm</Transaction>
-    <Transaction>2015/09/25 21:37:06.941,C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Formularios\01-Cadastros\UFRM_Modelo.pas=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Unit2.pas</Transaction>
+	<Transactions>
+    <Transaction>2015/09/25 21:35:46.000.766,=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Unit2.pas</Transaction>
+    <Transaction>2015/09/25 21:37:06.000.941,C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Unit2.pas=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Formularios\01-Cadastros\UFRM_Modelo.pas</Transaction>
+    <Transaction>2015/09/25 21:37:06.000.941,C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Unit2.dfm=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Formularios\01-Cadastros\UFRM_Modelo.dfm</Transaction>
   </Transactions>
 </BorlandProject>
