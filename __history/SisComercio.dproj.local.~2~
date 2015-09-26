@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/09/22 07:34:01.000.840,=C:\Users\alexs\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/09/23 21:52:21.000.589,=C:\Users\alexs\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/09/23 21:55:21.000.069,C:\Users\alexs\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Formularios\UFRM_Principal.pas</Transaction>
+    <Transaction>2015/09/23 21:55:21.000.069,C:\Users\alexs\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Formularios\UFRM_Principal.dfm</Transaction>
+    <Transaction>2015/09/23 21:55:32.000.756,C:\Users\alexs\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\SisComercio.dproj</Transaction>
+    <Transaction>2015/09/23 21:57:49.000.079,=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Unit1.pas</Transaction>
+    <Transaction>2015/09/23 21:58:34.000.516,C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Unit1.dfm=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\DataModulos\UDM_Principal.dfm</Transaction>
+    <Transaction>2015/09/23 21:58:34.000.516,C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Unit1.pas=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\DataModulos\UDM_Principal.pas</Transaction>
+    <Transaction>2015/09/23 22:26:47.000.045,C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\DataModulos\UDM_Principal.pas=</Transaction>
+    <Transaction>2015/09/23 22:27:07.000.164,=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Unit1.pas</Transaction>
+    <Transaction>2015/09/23 22:27:34.000.390,C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\DataModulos\UDM_principal1.pas=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Unit1.pas</Transaction>
+    <Transaction>2015/09/23 22:27:34.000.390,C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\DataModulos\UDM_principal1.dfm=C:\Users\alexs\OneDrive\Projetos\Sistemas\SistemaComercial\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>

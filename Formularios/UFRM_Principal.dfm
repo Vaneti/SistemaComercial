@@ -1,7 +1,7 @@
 object Form1: TForm1
   Left = 0
   Top = 0
-  Caption = 'Form1'
+  Caption = 'Sistema Comercial'
   ClientHeight = 608
   ClientWidth = 842
   Color = clBtnFace
@@ -18,6 +18,7 @@ object Form1: TForm1
     Top = 0
     Width = 842
     Height = 27
+    UseSystemFont = False
     ActionManager = Acoes
     Caption = 'ActionMainMenuBar1'
     Color = clMenuBar
@@ -26,7 +27,7 @@ object Form1: TForm1
     ColorMap.BtnSelectedFont = clBlack
     ColorMap.UnusedColor = clWhite
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clWindowText
+    Font.Color = clBlack
     Font.Height = -13
     Font.Name = 'Segoe UI'
     Font.Style = []
@@ -52,9 +53,6 @@ object Form1: TForm1
     ParentFont = False
     PopupMenu = PopupMenu1
     Spacing = 0
-    ExplicitLeft = 352
-    ExplicitTop = 312
-    ExplicitWidth = 150
   end
   object Acoes: TActionManager
     FileName = 'menu.xxx'

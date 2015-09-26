@@ -1,0 +1,18 @@
+program SisComercio;
+
+uses
+  Vcl.Forms,
+  UFRM_Principal in 'Formularios\UFRM_Principal.pas' {Form1},
+  UDM_Principal in 'DataModulos\UDM_Principal.pas' {DataModule1: TDataModule},
+  UFRM_Modelo in 'Formularios\01-Cadastros\UFRM_Modelo.pas' {Form2};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.CreateForm(TForm2, Form2);
+  Application.Run;
+end.
