@@ -7,7 +7,8 @@ uses
   System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Actions, Vcl.ActnList,
   Vcl.ActnCtrls, Vcl.ToolWin, Vcl.ActnMan, Vcl.ActnMenus,
-  Vcl.PlatformDefaultStyleActnCtrls, Vcl.Menus, Vcl.CustomizeDlg;
+  Vcl.PlatformDefaultStyleActnCtrls, Vcl.Menus, Vcl.CustomizeDlg,
+  Vcl.ActnColorMaps, Vcl.StdCtrls;
 
 type
   TForm1 = class(TForm)
@@ -33,7 +34,10 @@ type
     PopupMenu1: TPopupMenu;
     CustomizeDlg1: TCustomizeDlg;
     Personalizar1: TMenuItem;
+    XPColorMap1: TXPColorMap;
+    Button1: TButton;
     procedure Personalizar1Click(Sender: TObject);
+    procedure Button1Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -46,6 +50,13 @@ var
 implementation
 
 {$R *.dfm}
+
+uses UFRM_Modelo;
+
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+ FRM_Modelo.Show;
+end;
 
 procedure TForm1.Personalizar1Click(Sender: TObject);
 begin  //Puxa o o opção para customização do menu

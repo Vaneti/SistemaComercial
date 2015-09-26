@@ -21,14 +21,11 @@ object Form1: TForm1
     UseSystemFont = False
     ActionManager = Acoes
     Caption = 'ActionMainMenuBar1'
-    Color = clMenuBar
-    ColorMap.DisabledFontColor = 7171437
-    ColorMap.HighlightColor = clWhite
-    ColorMap.BtnSelectedFont = clBlack
-    ColorMap.UnusedColor = clWhite
+    Color = clBtnShadow
+    ColorMap = XPColorMap1
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clBlack
-    Font.Height = -13
+    Font.Color = clWindowText
+    Font.Height = -19
     Font.Name = 'Segoe UI'
     Font.Style = []
     Spacing = 0
@@ -40,19 +37,25 @@ object Form1: TForm1
     Height = 29
     ActionManager = Acoes
     Caption = 'barrapadrao'
-    Color = clMenuBar
-    ColorMap.DisabledFontColor = 7171437
-    ColorMap.HighlightColor = clWhite
-    ColorMap.BtnSelectedFont = clBlack
-    ColorMap.UnusedColor = clWhite
+    Color = clBtnShadow
+    ColorMap = XPColorMap1
     Font.Charset = DEFAULT_CHARSET
-    Font.Color = clBlack
-    Font.Height = -11
+    Font.Color = clWindowText
+    Font.Height = -19
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     PopupMenu = PopupMenu1
     Spacing = 0
+  end
+  object Button1: TButton
+    Left = 368
+    Top = 264
+    Width = 75
+    Height = 25
+    Caption = 'Teste'
+    TabOrder = 2
+    OnClick = Button1Click
   end
   object Acoes: TActionManager
     FileName = 'menu.xxx'
@@ -80,6 +83,9 @@ object Form1: TForm1
             Caption = '&Cadastro'
           end
           item
+            Caption = '-'
+          end
+          item
             Items = <
               item
                 Action = Ac_vendas_pdv
@@ -88,12 +94,18 @@ object Form1: TForm1
             Caption = '&Vendas'
           end
           item
+            Caption = '-'
+          end
+          item
             Items = <
               item
                 Action = ac_consulta_Movimento
                 Caption = '&Movimento Diario'
               end>
             Caption = 'C&onsulta'
+          end
+          item
+            Caption = '-'
           end
           item
             Items = <
@@ -106,6 +118,9 @@ object Form1: TForm1
                 Caption = '&Venda por Dia'
               end>
             Caption = '&Relatorios'
+          end
+          item
+            Caption = '-'
           end
           item
             Items = <
@@ -128,6 +143,9 @@ object Form1: TForm1
             Caption = '&Ultilit'#225'rios'
           end
           item
+            Caption = '-'
+          end
+          item
             Items = <
               item
                 Action = ac_seguranca_Logoff
@@ -138,6 +156,9 @@ object Form1: TForm1
                 Caption = '&Perfil'
               end>
             Caption = '&Seguran'#231'a'
+          end
+          item
+            Caption = '-'
           end
           item
             Items = <
@@ -239,5 +260,14 @@ object Form1: TForm1
     StayOnTop = False
     Left = 752
     Top = 248
+  end
+  object XPColorMap1: TXPColorMap
+    Color = clBtnShadow
+    HighlightColor = clWhite
+    FrameBottomRightInner = clSilver
+    BtnSelectedColor = clBtnFace
+    UnusedColor = clWhite
+    Left = 752
+    Top = 336
   end
 end
