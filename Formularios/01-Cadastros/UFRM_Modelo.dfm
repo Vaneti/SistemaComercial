@@ -22,6 +22,7 @@ object FRM_Modelo: TFRM_Modelo
     ButtonHeight = 52
     ButtonWidth = 60
     Caption = 'ToolBar1'
+    DrawingStyle = dsGradient
     Images = imcadastro
     ShowCaptions = True
     TabOrder = 0
@@ -106,7 +107,7 @@ object FRM_Modelo: TFRM_Modelo
     Top = 57
     Width = 736
     Height = 500
-    ActivePage = tbCadatro
+    ActivePage = tbConuslta
     Align = alClient
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
@@ -117,7 +118,10 @@ object FRM_Modelo: TFRM_Modelo
     TabOrder = 1
     object tbCadatro: TTabSheet
       Caption = 'tbCadatro'
-      ExplicitLeft = 8
+    end
+    object tbConuslta: TTabSheet
+      Caption = 'tbConuslta'
+      ImageIndex = 1
       object Panel1: TPanel
         Left = 0
         Top = 0
@@ -125,28 +129,41 @@ object FRM_Modelo: TFRM_Modelo
         Height = 89
         Align = alTop
         TabOrder = 0
-        object ComboBox1: TComboBox
+        ExplicitTop = 8
+        object lblCampo: TLabel
+          Left = 8
+          Top = 9
+          Width = 42
+          Height = 17
+          Caption = 'Campo'
+        end
+        object lblvalor: TLabel
+          Left = 159
+          Top = 8
+          Width = 117
+          Height = 17
+          Caption = 'Valor para pesquisa'
+        end
+        object cbxField: TComboBox
           Left = 8
           Top = 32
           Width = 145
           Height = 25
           TabOrder = 0
-          Text = 'ComboBox1'
         end
-        object Edit1: TEdit
+        object edtValor: TEdit
           Left = 159
-          Top = 32
+          Top = 31
           Width = 362
           Height = 25
           TabOrder = 1
-          Text = 'Edit1'
         end
-        object BitBtn1: TBitBtn
+        object btnPesquisar: TBitBtn
           Left = 536
           Top = 32
           Width = 65
           Height = 25
-          Caption = 'BitBtn1'
+          Caption = 'Pesquisar'
           TabOrder = 2
         end
       end
@@ -164,16 +181,10 @@ object FRM_Modelo: TFRM_Modelo
         TitleFont.Style = []
       end
     end
-    object tbConuslta: TTabSheet
-      Caption = 'tbConuslta'
-      ImageIndex = 1
-      ExplicitTop = 24
-      ExplicitHeight = 472
-    end
   end
   object MainMenu1: TMainMenu
     Images = imcadastro
-    Left = 504
+    Left = 480
     Top = 8
     object manuteno1: TMenuItem
       Caption = 'Manuten'#231#227'o'
@@ -206,7 +217,7 @@ object FRM_Modelo: TFRM_Modelo
   end
   object ActionList1: TActionList
     Images = imcadastro
-    Left = 576
+    Left = 536
     Top = 8
     object ac_imprimir: TAction
       Category = 'CRUD'
@@ -248,10 +259,10 @@ object FRM_Modelo: TFRM_Modelo
   object imcadastro: TImageList
     Height = 32
     Width = 32
-    Left = 648
+    Left = 592
     Top = 8
     Bitmap = {
-      494C01010C007400340120002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
+      494C01010C007400380120002000FFFFFFFFFF10FFFFFFFFFFFFFFFF424D3600
       0000000000003600000028000000800000008000000001002000000000000000
       0100000000000000000000000000000000000000000000000000000000000000
       0000000000000000000000000000000000000000000000000000000000000000
@@ -2369,5 +2380,9 @@ object FRM_Modelo: TFRM_Modelo
       FFD80BFFE44FF227FFC00FFF00000000FFCFF3FFF7DFFBEFFFC01FFF00000000
       FFF00FFFF83FFC1FFFFFFFFF0000000000000000000000000000000000000000
       000000000000}
+  end
+  object ds: TDataSource
+    Left = 696
+    Top = 8
   end
 end

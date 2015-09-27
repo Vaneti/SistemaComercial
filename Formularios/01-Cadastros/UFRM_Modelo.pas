@@ -47,10 +47,13 @@ type
     tbCadatro: TTabSheet;
     tbConuslta: TTabSheet;
     Panel1: TPanel;
+    cbxField: TComboBox;
+    edtValor: TEdit;
+    btnPesquisar: TBitBtn;
     DBGrid1: TDBGrid;
-    ComboBox1: TComboBox;
-    Edit1: TEdit;
-    BitBtn1: TBitBtn;
+    lblCampo: TLabel;
+    lblvalor: TLabel;
+    ds: TDataSource;
   private
     { Private declarations }
   public
