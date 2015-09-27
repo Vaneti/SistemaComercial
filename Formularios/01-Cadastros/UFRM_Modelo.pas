@@ -3,7 +3,8 @@ unit UFRM_Modelo;
 interface
 
 uses
-  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, System.Actions, Vcl.ActnList, Vcl.Menus,
   Vcl.ComCtrls, Vcl.ToolWin, System.ImageList, Vcl.ImgList, Data.DB,
   Vcl.StdCtrls, Vcl.Buttons, Vcl.Grids, Vcl.DBGrids, Vcl.ExtCtrls;
@@ -54,6 +55,14 @@ type
     lblCampo: TLabel;
     lblvalor: TLabel;
     ds: TDataSource;
+    procedure ac_incluirExecute(Sender: TObject);
+    procedure ac_excluirExecute(Sender: TObject);
+    procedure ac_alterarExecute(Sender: TObject);
+    procedure ac_consultarExecute(Sender: TObject);
+    procedure ac_imprimirExecute(Sender: TObject);
+    procedure ac_gravarExecute(Sender: TObject);
+    procedure ac_cancelarExecute(Sender: TObject);
+    procedure ac_FecharExecute(Sender: TObject);
   private
     { Private declarations }
   public
@@ -66,5 +75,55 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TFRM_Modelo.ac_alterarExecute(Sender: TObject);
+begin
+  PageControl1.ActivePage := tbCadatro;
+  ds.DataSet.Edit;
+end;
+
+procedure TFRM_Modelo.ac_cancelarExecute(Sender: TObject);
+begin
+  ds.DataSet.Cancel;
+  PageControl1.ActivePage := tbConuslta;
+end;
+
+procedure TFRM_Modelo.ac_consultarExecute(Sender: TObject);
+begin
+  if PageControl1.ActivePage = tbConuslta then
+    PageControl1.ActivePage := tbCadatro
+  else
+    PageControl1.ActivePage := tbConuslta;
+
+end;
+
+procedure TFRM_Modelo.ac_excluirExecute(Sender: TObject);
+begin
+  ds.DataSet.Delete;
+end;
+
+procedure TFRM_Modelo.ac_FecharExecute(Sender: TObject);
+begin
+  close;
+end;
+
+procedure TFRM_Modelo.ac_gravarExecute(Sender: TObject);
+begin
+  ds.DataSet.Post;
+  PageControl1.ActivePage := tbConuslta;
+end;
+
+procedure TFRM_Modelo.ac_imprimirExecute(Sender: TObject);
+begin
+  ShowMessage('implementação futura');
+end;
+
+procedure TFRM_Modelo.ac_incluirExecute(Sender: TObject);
+begin
+  PageControl1.ActivePage := tbCadatro;
+  if not ds.DataSet.Active then
+    ds.DataSet.Open;
+  ds.DataSet.Insert;
+end;
 
 end.

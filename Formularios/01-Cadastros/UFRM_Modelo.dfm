@@ -222,38 +222,46 @@ object FRM_Modelo: TFRM_Modelo
     object ac_imprimir: TAction
       Category = 'CRUD'
       Caption = 'ac_imprimir'
+      OnExecute = ac_imprimirExecute
     end
     object ac_consultar: TAction
       Category = 'CRUD'
       Caption = 'Consultar'
       ImageIndex = 10
+      OnExecute = ac_consultarExecute
     end
     object ac_excluir: TAction
       Category = 'CRUD'
       Caption = 'Excluir'
       ImageIndex = 1
+      OnExecute = ac_excluirExecute
     end
     object ac_alterar: TAction
       Category = 'CRUD'
       Caption = 'Alterar'
       ImageIndex = 6
+      OnExecute = ac_alterarExecute
     end
     object ac_incluir: TAction
       Category = 'CRUD'
       Caption = 'Incluir'
       ImageIndex = 0
+      OnExecute = ac_incluirExecute
     end
     object ac_gravar: TAction
       Caption = 'Gravar'
       ImageIndex = 5
+      OnExecute = ac_gravarExecute
     end
     object ac_cancelar: TAction
       Caption = 'Cancelar'
       ImageIndex = 4
+      OnExecute = ac_cancelarExecute
     end
     object ac_Fechar: TAction
       Caption = 'Fechar'
       ImageIndex = 3
+      OnExecute = ac_FecharExecute
     end
   end
   object imcadastro: TImageList
